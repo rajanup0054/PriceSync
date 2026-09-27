@@ -66,3 +66,10 @@ lib/
 firestore.rules
 .env.local.example
 ```
+## Snapshots
+
+<img width="1728" height="963" alt="image" src="https://github.com/user-attachments/assets/cbf7e788-e4b6-4190-9a52-1760fce4c1f9" />
+
+##
+<img width="1598" height="850" alt="image" src="https://github.com/user-attachments/assets/5bfb890d-b76d-4c5c-a897-37df4d973834" />
+
