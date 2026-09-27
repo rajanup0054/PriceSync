@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /products/{productId} {
+      // Anyone can read live prices (public tracker page).
+      allow read: if true;
+
+      // Only signed-in users can add/update/delete prices from Admin.
+      // For a quick local demo you can temporarily use `allow write: if true;`,
+      // but lock this down (e.g. to an admin custom claim) before deploying publicly.
+      allow write: if request.auth != null;
+    }
+  }
+}
